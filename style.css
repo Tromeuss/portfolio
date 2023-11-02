@@ -1,0 +1,170 @@
+
+
+
+/* Déclaration des variables de couleur pour changer le theme facilement */
+:root {
+    --main : #091C4F;
+    --seconde : #007FA9;
+    --gray : #CEDDDE;
+    --blue : #82CFD8;
+    --white : #ffff;
+}
+
+
+body {
+    background-color: var(--main);
+}
+
+
+
+
+
+
+/*________________________________________________HEADER_________________________________________________*/
+
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+}
+
+.container_header {
+    margin-top: 5px;
+    margin-right: 23%;
+    display: flex;
+    align-items: center;
+}
+
+.lang {
+    color: var(--white);
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.fa-moon {
+    color: var(--white);
+    margin-left: 20px;
+    font-size: 1.5em    ;
+}
+
+
+
+/* Button Switch FR/EN */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 5px;
+    bottom: 4px;
+    background-color: var(--white);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--seconde);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--blue);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(15px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+    border: 1px solid var(--gray);
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+/*________________________________First Section____________________________________*/
+.first_section {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    margin-top: 4%;
+
+}
+
+
+.container_h1 {
+    border: 1px solid black;
+    width: 50%;
+    font-size: 10em;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    align-items: start;
+    justify-content: top;
+    padding-left: 5%;
+}
+
+h1{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+h2{
+    width: 95   %;
+    display: flex;
+    justify-content: end;
+}
+
+
+.container_objet {
+    border: 1px solid black;
+    width: 50%;
+}
+
+
+
+.arrow_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 3em;
+    color: var(--white);
+    cursor: pointer;
+}
