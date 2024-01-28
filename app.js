@@ -44,6 +44,7 @@ observer.observe(document.querySelector('.first_section'))
 const blanc = document.querySelector('.blanc')
 const first = document.querySelector('.first_section')
 const intro = document.querySelector('.container_intro')
+const html = document.querySelector('.html')
 
 blanc.onclick = function() {
     first.classList.add('full')
@@ -55,7 +56,9 @@ blanc.onclick = function() {
     }, 500);
     setTimeout(() => {
         intro.classList.add('moov')
-    }, 600);
+        intro.classList.add('cont_intro')
+        html.classList.add('overflow')
+    }, 650);
    
 }   
 
